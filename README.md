@@ -5,11 +5,11 @@
 ## Як запустити проект
 1. Встановити необхідні модулі:
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 або
 ```
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 2. Помістити отриманий від автора файл з ключем <sub>key.key</sub> в цю папку з проектом. Якщо у вас немає файлу з ключем, напишіть сюди: oleksii.yakymchuk@gmail.com.
 3. Запустити файл <sub> crypto.py </sub>. Він розшифрує файли <sub>config.py</sub> і <sub>google_sa_credentials.json</sub>.
