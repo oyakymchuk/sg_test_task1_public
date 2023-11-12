@@ -1,4 +1,7 @@
+import os
+
 from cryptography.fernet import Fernet
+from loggerinitializer import *
 
 def write_key():
     """
@@ -43,6 +46,15 @@ def decrypt(filename, key):
         file.write(decrypted_data)
 
 if __name__ == "__main__":
-    key = load_key()
-    decrypt('google_sa_credentials.json', key)
-    decrypt('config.py', key)
+    initialize_logger()
+
+    logging.info("Tool for decryption sensetive files started.")
+    if os.path.exists('key.key'):
+        logging.info("Key is successfuly founded.")
+        key = load_key()
+        decrypt('google_sa_credentials.json', key)
+        decrypt('config.py', key)
+        logging.info("Files are decrypted. You can run main.py.")
+    else:
+        logging.info("File `key.key` was not founded. Make sure you place key in this folder.")
+    logging.info("Decryption tool finished.")
