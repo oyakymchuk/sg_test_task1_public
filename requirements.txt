@@ -11,13 +11,6 @@ dataclasses==0.6
 debugpy==1.8.0
 decorator==5.1.1
 executing==2.0.1
-google-api-core==1.34.0
-google-api-python-client==2.6.0
-google-auth==2.23.4
-google-auth-httplib2==0.1.0
-google-auth-oauthlib==1.1.0
-google-drive==0.5.0
-googleapis-common-protos==1.61.0
 gspread==5.12.0
 h11==0.14.0
 httpcore==1.0.2
